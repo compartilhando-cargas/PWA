@@ -1,7 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
+import GlobalStyles from "../../styles/global"
+import * as S from "./styled"
 import { Header } from "../../components"
 
 const Layout = ({ children }) => {
@@ -16,7 +17,8 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <S.LayoutWrapper>
+      <GlobalStyles />
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
@@ -32,7 +34,7 @@ const Layout = ({ children }) => {
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
       </div>
-    </>
+    </S.LayoutWrapper>
   )
 }
 
