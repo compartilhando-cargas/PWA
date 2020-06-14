@@ -27,12 +27,22 @@ export const TabItem = styled.li`
 export const TabLink = styled(Link)`
   text-decoration: none;
   color: #eee;
-  display: block;
-  height: 72px;
-  line-height: 72px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   &.active {
     background: #128c7e;
-    border-bottom: 2px solid #fff;
+    border-bottom: 4px solid #fff;
+  }
+
+  svg,
+  span {
+    margin: 6px 0px;
+  }
+
+  svg.menu {
+    margin-top: 20px;
   }
 `

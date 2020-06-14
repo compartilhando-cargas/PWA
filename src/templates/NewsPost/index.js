@@ -3,6 +3,8 @@ import { graphql } from "gatsby"
 import { Layout } from "../../components"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
+import * as S from "../../styles/newsPost"
+
 export const query = graphql`
   query NewsPost($slug: String!) {
     contentfulNewsPost(slug: { eq: $slug }) {
@@ -27,15 +29,17 @@ const NewsPost = props => {
 
   return (
     <Layout>
-      <h1>{title}</h1>
-      <h4>{date}</h4>
-      <img
-        width="300"
-        src={`http:${thumbnail?.file.url}`}
-        alt={thumbnail?.description}
-        hidden={!thumbnail?.file}
-      />
-      {documentToReactComponents(props.data.contentfulNewsPost.body.json)}
+      <S.PostArticle>
+        <S.PostTitle>{title}</S.PostTitle>
+        <S.PostDate>{date}</S.PostDate>
+        <img
+          width="300"
+          src={`https:${thumbnail?.file.url}`}
+          alt={thumbnail?.description}
+          hidden={!thumbnail?.file}
+        />
+        {documentToReactComponents(props.data.contentfulNewsPost.body.json)}
+      </S.PostArticle>
     </Layout>
   )
 }

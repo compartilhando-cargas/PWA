@@ -2,11 +2,13 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Layout } from "../../components"
 
+import * as S from "../../styles/truckerPost"
+
 export const query = graphql`
   query TruckerPost($idTrucker: Int!) {
     contentfulTruckerPost(idTrucker: { eq: $idTrucker }) {
       name
-      phone
+      phoneNumber
       description
       photo {
         description
@@ -21,20 +23,29 @@ export const query = graphql`
 const TruckerPost = props => {
   const {
     name,
-    phone,
+    phoneNumber,
     description,
-    photo: {
-      description: alt,
-      file: { url },
-    },
+    photo,
   } = props.data.contentfulTruckerPost
 
   return (
     <Layout>
-      <h1>{name}</h1>
-      <h3>{phone}</h3>
-      <h4>{description}</h4>
-      <img width="300" src={`http:${url}`} alt={alt} />
+      <S.TruckerWrapper>
+        <img
+          width="300"
+          src={`https:${photo?.file.url}`}
+          alt={photo?.description}
+        />
+
+        <S.TruckerName>{name}</S.TruckerName>
+        <S.TruckerPhone>
+          {phoneNumber}
+          <S.PhoneLink href={`https://wa.me/${phoneNumber}`}>
+            <S.WhatsappIcon />
+          </S.PhoneLink>
+        </S.TruckerPhone>
+        <S.TruckerDescription>{description}</S.TruckerDescription>
+      </S.TruckerWrapper>
     </Layout>
   )
 }

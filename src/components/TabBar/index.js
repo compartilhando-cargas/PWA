@@ -1,4 +1,11 @@
 import React from "react"
+import {
+  FaNewspaper,
+  FaTruck,
+  FaBell,
+  FaSearch,
+  FaEllipsisV,
+} from "react-icons/fa"
 
 import * as S from "./styles"
 
@@ -8,18 +15,21 @@ const TabBar = () => {
       <S.TabNav>
         <S.TabList>
           <S.TabItem>
-            <S.TabLink to="/" activeClassName="active">
-              Notícias
+            <S.TabLink to="/news/" activeClassName="active">
+              <FaNewspaper size={26} color="#FFFFFF" />
+              <span>Notícias</span>
             </S.TabLink>
           </S.TabItem>
           <S.TabItem>
             <S.TabLink to="/trucker/" activeClassName="active">
-              Pesquisa
+              <FaTruck size={26} color="#FFFFFF" />
+              <span>Caminhoneiros</span>
             </S.TabLink>
           </S.TabItem>
           <S.TabItem>
-            <S.TabLink to="/profile/" activeClassName="active">
-              Perfil
+            <S.TabLink to="/notification/" activeClassName="active">
+              <FaBell size={26} color="#FFFFFF" />
+              <span>Notificações</span>
             </S.TabLink>
           </S.TabItem>
         </S.TabList>

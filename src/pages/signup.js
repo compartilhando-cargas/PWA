@@ -1,31 +1,47 @@
 import React from "react"
-import { Link } from "gatsby"
-import { FaArrowRight, FaChevronLeft } from 'react-icons/fa';
 
-import { SEO, Layout } from "../components"
-import { BackScreen, FormSignUp } from '../styles/signup';
+import { FaArrowRight, FaChevronLeft } from "react-icons/fa"
+
+import { SEO } from "../components"
+
+import * as S from "../styles/signup"
 
 const SignUpPage = () => (
-  <Layout>
-    <SEO title="cadastro" />    
-    <BackScreen>
-      <FaChevronLeft size={20} color="#128C7E" />
-      <strong>Cadastro</strong>
-      <div></div>
-    </BackScreen>
-    <FormSignUp>    
-      <p>Para aproveitar dos beneficios do <span>Compartilhando Cargas</span> informe alguns dados:</p>
-      <input type="text" name="name" id="name" placeholder="Nome"/><br/>
-      <input type="number" name="phone" id="phone" placeholder="+55 99999-9999"/><br/>
-      <button type="button">
+  <>
+    <SEO title="cadastro" />
+    <S.BackScreen>
+      <S.Linking to="/">
+        <FaChevronLeft size={20} color="#128C7E" />
+        <strong>Cadastro</strong>
+        <div></div>
+      </S.Linking>
+    </S.BackScreen>
+
+    <S.FormSignUp>
+      <p>
+        Para aproveitar dos beneficios do <span>Compartilhando Cargas</span>{" "}
+        informe alguns dados:
+      </p>
+      <input type="text" name="name" id="name" placeholder="Nome" />
+      <br />
+      <input
+        type="number"
+        name="phone"
+        id="phone"
+        placeholder="+55 99999-9999"
+      />
+      <br />
+      <S.ButtonLink>
         <span>Continuar</span>
         <div>
           <FaArrowRight size={15} color="#128C7E" />
-        </div>         
-      </button>
-      <Link to="signin">ja possui cadastro?<span> Login</span></Link>
-    </FormSignUp>  
-  </Layout>
+        </div>
+      </S.ButtonLink>
+      <S.Linking to="/">
+        ja possui cadastro?<span> Login</span>
+      </S.Linking>
+    </S.FormSignUp>
+  </>
 )
 
-export default SignUpPage;
+export default SignUpPage

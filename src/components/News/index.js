@@ -31,14 +31,14 @@ const News = () => {
             <S.Card>
               <img
                 width="300"
-                src={`http:${edge?.node?.thumbnail?.file.url}`}
+                src={`https:${edge?.node?.thumbnail?.file.url}`}
                 alt={edge?.node?.thumbnail?.description}
                 hidden={!edge.node?.thumbnail?.file}
               />
-              <Link to={`/news/${edge.node.slug}`}>
-                <h2>{edge.node.title}</h2>
-                <h4>{edge.node.date}</h4>
-              </Link>
+              <S.CardLink to={`/news/${edge.node.slug}`}>
+                <S.CardTitle>{edge.node.title}</S.CardTitle>
+                <S.CardDate>{edge.node.date}</S.CardDate>
+              </S.CardLink>
             </S.Card>
           </S.CardItem>
         )
