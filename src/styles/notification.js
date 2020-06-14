@@ -7,14 +7,13 @@ export const Title = styled.h1`
   font-weight: bold;
 `
 
-export const NotificationLayoutLink = styled.div`
-  // margin: 20px 0px 20px;
+export const NotificationLayoutList = styled.div`
   display: flex;
   flex-wrap: wrap;
 `
 
-export const NotificationCard = styled(Link)`
-  width: 300px;
+export const NotificationCard = styled.div`
+  width: 310px;
   height: auto;
   background: #ffffff;
   border: 1px solid #46eb84;
