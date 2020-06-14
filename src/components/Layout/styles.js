@@ -7,4 +7,5 @@ export const LayoutWrapper = styled.section`
   max-width: 960px;
   padding: 0 1.0875rem 1.45rem;
   margin-top: 80px;
+  background: #FFFFFF;
 `
