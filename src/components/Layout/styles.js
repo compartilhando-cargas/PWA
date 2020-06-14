@@ -8,6 +8,7 @@ export const LayoutWrapper = styled.section`
   min-height: calc(100vh - (80px + 2rem));
   padding: 1rem 1rem;
   margin-top: 80px;
+  background: #FFFFFF;
 `
 
 export const LayoutContent = styled.main`
