@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import GlobalStyles from "../../styles/global"
 import * as S from "./styles"
-import { Header, TabBar } from "../../components"
+import { Header, TabBar, News } from "../../components"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -23,12 +23,8 @@ const Layout = ({ children }) => {
         <GlobalStyles />
         {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
 
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <S.LayoutContent>{children}</S.LayoutContent>
+        <footer>© {new Date().getFullYear()}, Feito com 💓 para os 🚚</footer>
       </S.LayoutWrapper>
     </>
   )
