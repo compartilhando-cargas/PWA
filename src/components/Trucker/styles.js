@@ -19,10 +19,10 @@ export const ListItem = styled.article`
 export const Item = styled.div`
   display: flex;
   align-items: center;
-  padding: 30px;
+  padding: 0.25rem;
 `
 export const ItemImage = styled.img`
-  height: 40px;
+  height: 50px;
   width: auto;
   margin-right: 0.5rem;
 `

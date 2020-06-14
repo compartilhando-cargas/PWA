@@ -6,6 +6,10 @@ export const Title = styled.h1`
   color: #46eb84;
   font-weight: bold;
 `
+export const NotificationLink = styled(Link)`
+  text-decoration: none;
+  color: #666;
+`
 
 export const NotificationLayoutList = styled.div`
   display: flex;

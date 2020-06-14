@@ -1,7 +1,7 @@
 {
   "name": "compartilhando-cargas",
   "private": true,
-  "description": "Plataforma criada para os caminhoneiros se encontrarem, junto de notícias de todo o Brasil.",
+  "description": "Plataforma onde o caminhoneiro pode encontrar e compartilhar conteúdos com amigos. E ainda achar novos contatos de outros caminhoneiros de todo o Brasil.",
   "version": "0.1.0",
   "author": "Compartilhando Cargas",
   "dependencies": {

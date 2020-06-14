@@ -27,13 +27,18 @@ const NotificationPage = () => {
       <S.NotificationLayoutList>
         {data.allContentfulNotification.edges.map(edge => {
           return (
-            <S.NotificationCard key={edge.node.idNotification}>
-              <h4>{edge.node.title}</h4>
-              <p>{edge.node.desc}</p>
-              <div>
-                <FaShare size={24} color="#999999" />
-              </div>
-            </S.NotificationCard>
+            <S.NotificationLink
+              key={edge.node.idNotification}
+              to={`/news/${edge.node.link}`}
+            >
+              <S.NotificationCard>
+                <h4>{edge.node.title}</h4>
+                <p>{edge.node.desc}</p>
+                <div>
+                  <FaShare size={24} color="#999999" />
+                </div>
+              </S.NotificationCard>
+            </S.NotificationLink>
           )
         })}
       </S.NotificationLayoutList>
