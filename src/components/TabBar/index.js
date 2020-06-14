@@ -9,11 +9,11 @@ const TabBar = () => {
         <S.TabList>
           <S.TabItem>
             <S.TabLink to="/" activeClassName="active">
-              Home
+              Notícias
             </S.TabLink>
           </S.TabItem>
           <S.TabItem>
-            <S.TabLink to="/search/" activeClassName="active">
+            <S.TabLink to="/trucker/" activeClassName="active">
               Pesquisa
             </S.TabLink>
           </S.TabItem>
