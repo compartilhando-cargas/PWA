@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "compartilhando-cargas",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Plataforma criada para os caminhoneiros encontrar notícias e outros caminhoneiros de todo o Brasil.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Compartilhando Cargas",
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^13.4.0",
     "gatsby": "^2.22.15",
@@ -32,7 +32,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "env-cmd gatsby build",
     "develop": "env-cmd gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
