@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-export const LoginLayout = styled.div`
-  margin: 10px auto;
+export const FormSignIn = styled.form`
+  margin: 30px auto;
   text-align: center;
   max-width: 320px;
 
@@ -33,6 +33,21 @@ export const LoginLayout = styled.div`
     border-radius: 6px;
   }
 
+  button {
+    width: 100%;
+    background: #128C7E;
+    color: #FFFFFF;
+    padding: 15px;
+    border: 0;
+    border-radius: 6px;
+    margin-top: 20px;
+    transition: 400ms;
+  }
+
+  button:hover {
+    background: #128C56;
+  }
+
   a {
     display: flex;
     justify-content: flex-end;
@@ -50,6 +65,5 @@ export const LoginLayout = styled.div`
 
   a:hover {
     color: gray;
-  }
-  
+  }  
 `;

@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
       <TabBar />
       <S.LayoutWrapper>
         <GlobalStyles />
-        <Header siteTitle={data.site.siteMetadata.title} />
+        {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
 
         <main>{children}</main>
         <footer>
