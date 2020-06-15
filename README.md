@@ -17,7 +17,7 @@ Plataforma onde o caminhoneiro pode encontrar e compartilhar conteúdos com amig
 
 ## - 🎥 Video
 
-[Video apresentação](https://www.youtube.com/watch?v=A_8QB-eltX0)
+[Video apresentação](https://www.youtube.com/watch?v=gLXfeXw0EKs&feature=youtu.be)
 
 ## - 🌐 Web
 
