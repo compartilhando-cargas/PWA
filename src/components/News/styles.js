@@ -8,7 +8,6 @@ export const Cards = styled.section`
 `
 
 export const CardItem = styled.article`
-  min-width: 310px;
   min-height: 310px;
   background-color: white;
   border-radius: 0.25rem;
