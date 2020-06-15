@@ -10,7 +10,7 @@ const LoginPage = () => (
       <h1>Bem vindo(a)</h1>
       <p>A plataforma criada para beneficio dos caminhoneiros.</p>
       <div>
-        <img src={ImageLogin} />
+        <img src={ImageLogin} alt="Imagem de Login" />
       </div>
       <input
         type="number"
