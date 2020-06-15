@@ -12,14 +12,26 @@
 
 ## - 💻 Projeto
 
-> Plataforma criada para os caminhoneiros encontrar notícias e outros caminhoneiros de todo o Brasil.
+Plataforma onde o caminhoneiro pode encontrar e compartilhar conteúdos com amigos e ainda achar novos contatos de outros caminhoneiros de todo o Brasil.
+[Mais informações](.github/cc.pdf)
+
+## - 🎥 Video
+
+[Video apresentação](https://www.youtube.com/watch?v=A_8QB-eltX0)
+
+## - 🌐 Web
+
+> https://compartilhandocargas.tk/
+
+> https://compartilhando-cargas.netlify.app
+
+## - 📱 Mobile
+
+Acesse o site através dos links acima e aparecerá uma mensagem para instalar o app no smartphone (utilize o navegador chrome).
 
 ## - 📷 Imagens
 
-<h1 align="center">
-    <img alt="Splash" title="Splash" src=".github/img/splash.jpg" width="600px" />
-</h1>
-
-<h1 align="center">
-    <img alt="Signin" title="Signin" src=".github/img/signin.jpg" width="600px" />
-</h1>
+<p align="center">
+    <img alt="Splash" title="Splash" src=".github/img/splash.jpg" width="360px" width="45%" />
+    <img alt="Signin" title="Signin" src=".github/img/signin.jpg" width="360px" width="45%" />
+</p>
