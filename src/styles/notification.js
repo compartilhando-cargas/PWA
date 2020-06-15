@@ -17,7 +17,7 @@ export const NotificationLayoutList = styled.div`
 `
 
 export const NotificationCard = styled.div`
-  width: 310px;
+  width: 300px;
   height: auto;
   background: #ffffff;
   border: 1px solid #46eb84;
@@ -44,6 +44,6 @@ export const NotificationCard = styled.div`
   }
 
   @media (max-width: 900px) {
-    width: 100%;
+    width: 95%;
   }
 `
